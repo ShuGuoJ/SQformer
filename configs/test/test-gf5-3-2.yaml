@@ -1,0 +1,16 @@
+test_dataset:
+  dataset:
+    name: hsi-folder
+    args:
+      root_path: GF5/Valid_Spec
+  wrapper:
+    name: sr-implicit-downsampled
+    args:
+      scale_min: 3.2
+  batch_size: 1
+#eval_bsize: 30000
+eval_bsize: 10000
+
+data_norm:
+  inp: {sub: [0.5], div: [0.5]}
+  gt: {sub: [0.5], div: [0.5]}
